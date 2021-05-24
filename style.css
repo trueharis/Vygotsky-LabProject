@@ -38,8 +38,9 @@ nav img{
 .start{
     padding: 80px;
     margin: auto;
-    width: 80%;
+    width: 60%;
     display: flex;
+    justify-content: space-between;
 }
 .motto{
     padding-top: 160px;
@@ -47,7 +48,7 @@ nav img{
     font-weight: 300;
 }
 .motto h1{
-    font-size: 42px;
+    font-size: 32px;
 }
 .nav-links ul li::after{
   content: "";
