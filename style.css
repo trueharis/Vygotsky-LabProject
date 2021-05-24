@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #384b60;
+    text-decoration: none;
+    font-size: 18px;
+}
+.start{
+    padding: 80px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+.motto{
+    padding-top: 160px;
+    padding-left: 50px;
+    font-weight: 300;
+}
+.motto h1{
+    font-size: 42px;
+}
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #384b60;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+@media(max-width: 1000px){
+  .start{
+    flex-direction: column;
+  }
+}
+
+nav .fa{
+  display: none;
+}
+
+@media(max-width: 700px){
+
+  .nav-links ul li{
+    display: block;
+  }
+  
+  .nav i{
+    color: #384b60;
+  }
+  .nav-links ul li a{
+    color: white;
+  }
+  .nav-links{
+    position: absolute;
+    background: #bedafa;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa{
+    display: block;
+    color:#384b60;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+}
+/*_______________________________________ABOUT PROJECT__________________________________ */
+
+
+ 
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.project{
+  width: 100%;
+  margin: auto;
+  flex-basis: 45%;
+  background-image: url(images/banner2.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.about-pro{
+  padding: 25% 1% 5% 5% ;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.about-img{
+  padding: 12% 5% 12% 2%;
+}
+.about-img img{
+  width: 100%;
+}
+
+
+.mission{
+  width: 100%;
+  margin: auto;
+  flex-basis: 45%;
+  background-image: url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mission-pro{
+  padding: 25% 5% 15% 5%;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.mission-img{
+  padding: 12% 2% 12% 5%;
+}
+.mission-img img{
+  width: 100%;
+}
+
+
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
